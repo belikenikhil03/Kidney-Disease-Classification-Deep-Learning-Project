@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kidney Disease Classification</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC5klEQVRYR8WXS2hTURCGv7m3TYOpgrUqKoh0IVpfIAree1MfiCCIC1FcKLgQXCiCurBd+FgouHDhQhBBRBARBBEXbgetRuly3wi+UOs73pQmbU2SmuRKbpuHprnn3vwz55z/zMw/I/zjIf8yv3rgLHAEaAJ2A78Dr4AhETlZrE8pBRwC7gLDwDYR+eEXEpHtwGngE3BKREaKCSkogIeAZ8AREdGKi4mIVIMdwC3gjIjcyxdXTMAD4LC7/EhEDv7NIyJSA94Cp0XkaiZmRQEiUgO8Bg6IyJdyhIjIVuAl0CwiEzlPYHOKyC7gMdAkIu/LESAi24CnwF4RGU8L+AB0iMjzSgSIyFbgEdAmIp/9AnqNMZP7l3+LsY9fzXjOpmhQ5K6IHPcLGDPGvN+zZ09mWxcHhUa9Xj9oWVZ/EAT25s2b8wJ+GmP+RFFkxXG8qhpEpC4Mw8darS+fgMRxfDOO43YRmapUgIjsMsY8qNVq+/IJeGWM6YzjeKISASLS6DjObdu2u/MJGDfGvGo0Gp1RFP0uR4CI1IdhOOA4TnM+AdPGmLF6vd4ZBMFUKQJEpCEMw0HHcfaJyLRfwIwx5nkURZ1lPEGDMeZBGIb7ReR7ToCIPMkwW1gCrLUqnxRrbRtwP4qiDhH5mSOg1VrbY6099peSvOxmCYBKrbV3ECFXgDHmThRFx0Rkwi9gOyD/UkCltfaOwgOI8gQopW4rpboXj2Yt+OC8AF0nOI5zXg2jZpWSR2DRuK86Ny9Zay8CHUopP/c2ERkp9+AtaaKUUrprgru0UuoS0A7sXLpURGaAz8Cwc/5+pdRVl6RRKXWjUCXMtGH+tFIKoOlvwcX6AqXUMeBSpoBCT6CZWFwF+pVSVxYbkcx2TReuB6eAHqXUY6Bba92bK2CtlTBnzALjwAURebiCcSaAS8Bn4Lq3eQPQBXQDe3Nbtmqc6GZE917uMbMuzVnnWgNwR2v9oBRjvfY78AeT4/4Pzf579AAAAABJRU5ErkJggg==">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .main-container { max-width: 900px; margin: 2rem auto; }
+        .image-part { height: 300px; width: 300px; margin: 0 auto; border: 1px solid #dee2e6; border-radius: 4px; overflow: hidden; }
+        .image-part img, .image-part #video { height: 100%; width: 100%; object-fit: cover; }
+        .res-part { height: 310px; border: 1px solid #dee2e6; border-radius: 4px; padding: 1rem; overflow: auto; }
+        #loading { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(255, 255, 255, 0.8); display: flex; justify-content: center; align-items: center; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h2 class="text-center mb-4">Kidney Disease Classification</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="image-part mb-3">
+                    <video autoplay id="video" poster="https://via.placeholder.com/300x300.png?text=Capture+or+Upload+Image"></video>
+                    <img src="" id="photo" style="display:none;">
+                    <canvas id="canvas" style="display:none;"></canvas>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" id="uload">Upload Image</button>
+                    <button class="btn btn-success" id="send">Predict</button>
+                </div>
+                <input type="file" id="fileinput" style="display:none;" accept="image/*">
+                <input type="hidden" id="url" value="../predict">
+            </div>
+            <div class="col-md-6">
+                <h5 class="mb-3">Prediction Results</h5>
+                <div class="res-part mb-3"></div>
+                <div class="res-part2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading"><div class="loader"></div></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Your existing JavaScript code here
+        // Make sure to update any Bootstrap-specific JS if needed
+    </script>
+</body>
+</html>
