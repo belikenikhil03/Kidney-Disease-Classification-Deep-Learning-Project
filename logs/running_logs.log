@@ -593,3 +593,120 @@ OSError: No file or directory found at model\model.h5
 [2024-07-28 01:46:40,136: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 01:46:40] "GET / HTTP/1.1" 200 -]
 [2024-07-28 01:46:59,586: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 01:46:59] "GET / HTTP/1.1" 200 -]
 [2024-07-28 01:47:11,109: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 01:47:11] "GET / HTTP/1.1" 200 -]
+[2024-07-28 10:50:17,250: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 10:50:17,251: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 10:50:24,699: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 10:50:24] "GET / HTTP/1.1" 200 -]
+[2024-07-28 10:50:42,480: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 10:50:42] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 10:50:57,172: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 10:50:57] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 10:51:08,331: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 10:51:08] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 11:01:10,736: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation Stage started <<<<<<]
+[2024-07-28 11:01:10,739: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-28 11:01:10,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-28 11:01:10,884: INFO: common: created directory at: artifacts]
+[2024-07-28 11:01:10,885: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-28 11:01:56,521: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-28 11:01:59,035: INFO: stage_02_prepare_base_model: >>>>>> stage Base Model Preparation Stage completed <<<<<<
+
+x==========x]
+[2024-07-28 11:02:19,594: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-07-28 11:02:19,721: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-28 11:02:20,520: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-28 11:02:20,915: INFO: common: created directory at: artifacts]
+[2024-07-28 11:02:20,916: INFO: common: created directory at: artifacts\training]
+[2024-07-28 13:19:27,864: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-07-28 13:20:10,795: INFO: stage_04_model_evaluation: *******************]
+[2024-07-28 13:20:10,796: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-07-28 13:20:10,798: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-28 13:20:10,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-28 13:20:10,825: INFO: common: created directory at: artifacts]
+[2024-07-28 13:20:11,957: INFO: helpers: Accessing as belikenikhil03]
+[2024-07-28 13:20:12,641: INFO: helpers: Initialized MLflow to track repo "belikenikhil03/Kidney-Disease-Classification-Deep-Learning-Project"]
+[2024-07-28 13:20:12,643: INFO: helpers: Repository belikenikhil03/Kidney-Disease-Classification-Deep-Learning-Project initialized!]
+[2024-07-28 13:23:59,876: INFO: common: json file saved at: scores.json]
+[2024-07-28 13:23:59,878: INFO: common: json file saved at: scores.json]
+[2024-07-28 13:24:03,558: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-07-28 13:24:05,348: INFO: builder_impl: Assets written to: C:\Users\PAYALA~1\AppData\Local\Temp\tmpp43r_qt7\model\data\model\assets]
+[2024-07-28 13:24:43,508: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-07-28 13:27:36,162: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-28 13:27:36,165: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-28 13:27:36,167: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-28 13:27:36,168: INFO: common: created directory at: artifacts]
+[2024-07-28 13:27:36,168: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-28 13:27:36,169: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1fhCTaYHTt7WJCylkAvN8Vr7OWUQzkqCS/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-07-28 13:27:58,815: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 13:27:58,816: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 13:28:07,491: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:07] "GET / HTTP/1.1" 200 -]
+[2024-07-28 13:28:16,660: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:16] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:24,952: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:24] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:30,386: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:30] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:38,180: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:38] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:43,575: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000248E58C9430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-07-28 13:28:43,580: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:43] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:48,479: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000248E7088790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-07-28 13:28:48,486: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:48] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:53,400: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:53] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:28:58,216: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:28:58] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:05,246: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:05] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:12,458: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:12] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:26,124: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:26] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:32,142: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:32] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:37,121: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:37] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:41,817: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:41] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:49,721: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:49] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:54,728: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:54] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:29:59,253: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:29:59] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:05,461: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:05] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:10,687: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:10] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:16,909: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:16] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:22,156: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:22] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:36,138: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:36] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:42,992: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:42] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:52,358: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:52] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:30:58,786: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:30:58] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:31:06,055: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:31:06] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:32:14,176: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 13:32:14,177: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 13:32:23,407: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:32:23] "GET / HTTP/1.1" 200 -]
+[2024-07-28 13:32:30,180: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:32:30] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:39:43,493: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 13:39:43,494: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 13:39:56,017: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:39:56] "GET / HTTP/1.1" 200 -]
+[2024-07-28 13:39:56,359: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:39:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-07-28 13:40:04,808: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:40:04] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:40:18,281: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:40:18] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:40:36,890: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:40:36] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:40:42,194: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:40:42] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:40:48,713: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000025908DD9280> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-07-28 13:40:48,717: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:40:48] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:42:19,515: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000025908C1E430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-07-28 13:42:19,520: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:42:19] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:42:24,813: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:42:24] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:43:03,822: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 13:43:03,823: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 13:43:11,383: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:43:11] "POST /predict HTTP/1.1" 200 -]
+[2024-07-28 13:43:25,929: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-07-28 13:43:25,930: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-28 13:43:30,280: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:43:30] "GET / HTTP/1.1" 200 -]
+[2024-07-28 13:43:55,530: INFO: _internal: 127.0.0.1 - - [28/Jul/2024 13:43:55] "POST /predict HTTP/1.1" 200 -]
